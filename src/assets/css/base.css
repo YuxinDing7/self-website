@@ -1,0 +1,19 @@
+ul,ol,li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+input{
+    border: 0 none;
+    outline-style: none;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
