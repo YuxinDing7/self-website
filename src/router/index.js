@@ -1,8 +1,8 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import MyHome from "../pages/my-home.vue"
-import MainFrame from "../pages/main-frame.vue"
-import projects from "../pages/projects.vue"
-import wechat from "../pages/wechat.vue"
+import MyHome from "../views/my-home.vue"
+import MainFrame from "../views/main-frame.vue"
+import projects from "../views/projects.vue"
+import wechat from "../views/wechat.vue"
 
 const routes = [
     {
@@ -17,9 +17,12 @@ const routes = [
                 path:'projects',
                 component: projects,
             },
+            {
+                path:'wechat', 
+                component: wechat
+            },
         ],
     },
-    { path:'/wechat', component: wechat}
 ]
 
 const router = createRouter({

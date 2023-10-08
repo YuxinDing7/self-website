@@ -1,10 +1,12 @@
 <template>
 <div class="shell">
-    <ul class="image-frame"  ref="imageRef">
-        <li v-for="item in img_list">
-            <img :src="item"/>
-        </li>
-    </ul>
+    <div class="image-frame"  ref="imageRef">
+        <img src="/src/assets/img/1.jpg"/>
+        <img src="/src/assets/img/2.jpg"/>
+        <img src="/src/assets/img/3.jpg"/>
+        <img src="/src/assets/img/4.jpg"/>
+        <img src="/src/assets/img/5.jpg"/>
+    </div>
     <ul class="indicators">
         <li class="i" v-for="number in 5" ref="indicatorRefs" @click="indicatorClick(number)">
         </li>
@@ -18,12 +20,6 @@
 
 <script setup>
 import { ref, onMounted, reactive } from 'vue'
-const img_list = ref (["/src/assets/images/self_img/1.jpg",
-                        "/src/assets/images/self_img/2.jpg",
-                        "/src/assets/images/self_img/3.jpg",
-                        "/src/assets/images/self_img/4.jpg",
-                        "/src/assets/images/self_img/5.jpg"])
-
 
 const indicatorRefs = ref([])
 const imageRef = ref()
@@ -32,8 +28,6 @@ var index = 0
 var time
 var rapid = false
 onMounted(()=>{
-    //left = this.$refs.button-left
-    //console.log(imageRef)
     setPosition()
     timer()
 })
@@ -148,7 +142,7 @@ function indicatorClick(number){
 
 img{
     width: 320px;
-    height: auto;
+    object-fit: cover;
 }
 
 .indicators{

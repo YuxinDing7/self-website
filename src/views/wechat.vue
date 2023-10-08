@@ -1,7 +1,7 @@
 <template>
     <div class="center-img-box">
-        <img src="../assets/images/wechat_QRcode.jpg"/>
-        <img src="../assets/images/wepay.jpg"/>
+        <img src="../assets/img/wechat_QRcode.jpg"/>
+        <img src="../assets/img/wepay.jpg"/>
     </div>
     <div class="center-text-box">
         <p>有问题欢迎加我微信交流！❤</p>
@@ -20,8 +20,8 @@
 
 img{
     flex: 1;
-    width: 150px;
-    padding: 10px 100px 0px 100px;
+    width: 100px;
+    padding: 0px 120px;
 }
 
 .center-text-box{
